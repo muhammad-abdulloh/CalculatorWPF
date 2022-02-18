@@ -1,0 +1,89 @@
+﻿<Window x:Class="CalculatorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorWPF"
+        mc:Ignorable="d"
+        Background="#646464"
+        Title="MainWindow" Height="700" Width="495">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249.671"/>
+            <ColumnDefinition Width="250.329"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="110"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <TextBlock 
+                Background="White"
+                Height="95" 
+                     Width="464" 
+                     Margin="10,0,0,0" 
+                     
+                     Foreground="Black" 
+                     VerticalAlignment="Center" 
+                     HorizontalAlignment="Left" 
+                     FontSize="60"
+                TextAlignment="Right"
+                Name="Input"
+                
+                       />
+            
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel>
+                <Button Click="ClearButton" Width="100" Margin="10 0 0 0" Height="100" Content="C" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C2283F"/>
+                <Button Click="DelButton" Width="100" Margin="20 0 0 0" Height="100" Content="DEL" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C2283F"/>
+                <Button Click="SqrtButton" Width="100" Margin="20 0 0 0" Height="100" Content="sqrt" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#4183BD"/>
+                <Button Click="OperationClick" Width="100" Margin="0" Height="100" Content="sqr" FontFamily="Roboto" FontSize="40" VerticalAlignment="Center" Background="#4183BD"/>
+            </DockPanel>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel>
+                <Button Click="NumberClick" Width="100" Margin="10 0 0 0" Height="100" Content="7" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="8" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="9" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="OperationClick" Width="100" Margin="0" Height="100" Content="X" FontFamily="Roboto" FontSize="40" VerticalAlignment="Center" Background="#4183BD"/>
+            </DockPanel>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel>
+                <Button Click="NumberClick" Width="100" Margin="10 0 0 0" Height="100" Content="4" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="5" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="6" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="OperationClick" Width="100" Height="100" Content="/" FontFamily="Roboto" FontSize="40" VerticalAlignment="Center" Background="#4183BD"/>
+            </DockPanel>
+        </Grid>
+
+
+
+        <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel>
+                <Button Click="NumberClick" Width="100" Margin="10 0 0 0" Height="100" Content="1" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="2" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="NumberClick" Width="100" Margin="20 0 0 0" Height="100" Content="3" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="OperationClick" Width="100" Margin="0" Height="100" Content="-" FontFamily="Roboto" FontSize="40" VerticalAlignment="Center" Background="#4183BD"/>
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel>
+                <Button Click="NumberClick" Width="100" Margin="10 0 0 0" Height="100" Content="0" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#C3DBF2"/>
+                <Button Click="DotClick" Width="100" Margin="20 0 0 0" Height="100" Content="." FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#4183BD"/>
+                <Button Click="EqualClick" Width="100" Margin="20 0 0 0" Height="100" Content="=" FontFamily="Roboto" VerticalAlignment="Center" FontSize="40" Background="#4183BD"/>
+                <Button Click="OperationClick" Width="100" Margin="0" Height="100" Content="+" FontFamily="Roboto" FontSize="40" VerticalAlignment="Center" Background="#4183BD"/>
+            </DockPanel>
+        </Grid>
+
+    </Grid>
+</Window>
